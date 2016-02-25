@@ -1,0 +1,529 @@
+@font-face {
+  font-family: 'langting';
+  src: url('../font/langting.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    background: url(../img/bg.jpg) no-repeat left top;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: 'langting';
+    font-weight:normal;
+    position: relative;
+}
+.clear:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+#loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/bg.jpg)  left top no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+#loading img{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 50%;
+    margin-top: -5px;
+}
+#main {
+    width: 1070px;
+    position: absolute;
+    left: 50%;
+    margin-left: -535px;
+    overflow: hidden;
+    height: 768px;
+    z-index: 100;
+}
+
+#left{
+    width: 310px;
+    background: url(../img/bgpeople.png);
+    background-size: 310px 565px;
+    height: 565px;
+    float: left;
+    position: relative;
+    top: 90px;
+}
+#personal {
+    color: white;
+    width: 275px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 11px;
+}
+#user{
+    width: 220px;
+    height: 110px;
+    margin-left: 40px;
+    margin-top: 40px;
+    color: white;
+    border-bottom: 1px solid #1E2225;
+
+}
+#userleft{
+    float: left;
+    width: 75px;
+    margin-left: 20px;
+}
+#userright{
+    margin-top: 0px;
+    float: right;
+    width: 80px;
+    margin-right: 20px;
+}
+#userright p:first-child{
+    font-size: 25px;
+}
+#userright p:last-child{
+    font-size: 3px;
+    margin-top: 3px;
+    color: #98482C;
+}
+
+#left .sum{
+    width: 220px;
+    height: 50px;
+    margin-left: 40px;
+    color: white;
+    border-bottom: 1px solid #1E2225;
+    font-size: 8px;
+}
+#left .sum p{
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 10px;
+}
+#left .sum span{
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+#right{
+    width: 725px;
+    height: 630px;
+    float: right;
+    position: relative;
+    top: 35px;
+    overflow: hidden;
+}
+#date {
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#top{
+    width: 725px;
+    height: 385px;
+    margin-top: 10px;
+    position: relative;
+}
+#right .drive{
+    background-size: 349px 345px;
+    width: 349px;
+    height: 345px;
+    position: absolute;
+    top: 20px;
+}
+#drive1{
+    background: url(../img/bgdriveleft.png);
+    float: left;
+    left: 0px;
+}
+#point1{
+    -webkit-transform-origin:186px 182px;
+    -webkit-transform:rotate(-150deg); 
+    -moz-transform:rotate(-150deg); 
+}
+
+#drive2{
+    background: url(../img/bgdriveright.png);
+    float: right;
+    right: 0px;
+}
+#point2{
+    -webkit-transform-origin:166px 182px;
+    -webkit-transform:rotate(150deg); 
+    -moz-transform:rotate(150deg); 
+}
+
+#right .drive .message{
+    color: white;
+    text-align:center;
+    
+}
+#right .drive .message span{
+    display: none;
+}
+#right .drive .message p{
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+#right .drive .message .number{
+    overflow: hidden;
+}
+#right .drive .message .number ul.shiWei{
+    background-color: #202123;
+    display: block;
+    float: left;
+    height: 46px;
+    width: 26px;
+    color: white;
+    overflow: hidden;
+    font-size: 45px;
+    margin-top: 5px;
+    padding-top: 2px;
+}
+#right .drive .message .number ul.geWei{
+    background-color: #202123;
+    display: block;
+    float: right;
+    height: 46px;
+    width: 26px;
+    color: white;
+    overflow: hidden;
+    font-size: 45px;
+    margin-top: 5px;
+    padding-top: 2px;
+}
+
+#podu{
+    position: absolute;
+    left: 150px;
+    top: 234px;
+    width: 55px;
+    height: 70px;
+}
+#sudu{
+    position: absolute;
+    right: 150px;
+    top: 234px;
+    width: 55px;
+    height: 70px;
+}
+#drivecenter{
+    background: url(../img/bgdrivecenter.png);
+    float: left;
+    position: absolute;
+    background-size: 393px 393px;
+    width: 393px;
+    height: 393px;
+    margin-left: 50%;
+    left: -196px;
+}
+#drivecenterimg{
+    width: 288px;
+    height: 122px;
+    overflow: hidden;
+    margin: 46px auto;
+    position: relative;
+}
+#centerkedu{
+    -webkit-transform:rotate(38deg); 
+    -moz-transform:rotate(38deg); 
+}
+#centerpoint{
+    position: absolute;
+    bottom: -8px;
+    left: 48%;
+}
+#distance{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    color: white;
+}
+#distance span{
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    background-color: #2D3132;
+    height: 20px;
+    line-height: 20px;
+    background-color: #202123;
+}
+#distance p{
+    font-size: 8px;
+    height: 8px;
+    line-height: 8px;
+    text-align: center;
+    margin-top: 4px;
+}
+#time{
+   width: 185px;
+   margin: -30px auto;
+   color: white;
+   overflow: hidden;
+}
+#time p{
+    font-size: 13px; 
+    height: 13px;
+    line-height: 13px;
+    width: 185px;
+    text-align: center;
+}
+#clock{
+    width: 185px;
+    margin-top: 10px;
+    color: #FFF6BE;
+
+}
+#clock div.box{ 
+    float: left;
+}
+#clock div.box span.number {
+    display: block;
+    width:25px;
+    height:35px; 
+    margin-right: 5px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #202123;
+}
+#clock div.box span.dian {
+    display: block;
+    text-align: center;
+    width:10px;
+    height:35px; 
+    font-size: 25px;
+    line-height: 35px;
+    margin-left: -5px;
+}
+#clock div.box:last-child{
+    margin-right: -5px;
+}
+#calorie{
+    width: 100px;
+    height: 60px;
+    color: white;
+    margin: 40px auto;
+    text-align: center;
+
+}
+#calorie p{
+   font-size: 13px; 
+   height: 13px;
+   line-height: 13px;
+   width: 100px;
+   text-align: center;
+}
+#cal{
+    width: 100px;
+    margin-top: 12px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #202123;
+}
+#bottom{
+    width: 725px;
+    height: 195px;
+    margin-top: 20px;
+    position: relative;
+}
+#bottom .button{
+    width: 180px;
+    height: 180px;
+    background-size: 360px 180px;
+    position: absolute;
+    overflow: hidden;
+}
+#gradientbutton{
+    background: url(../img/track.png);  
+    background-position: left top;
+    left: 30px;
+    top: 0;
+}
+#buttonleft{
+    -webkit-transform:rotate(-25deg); 
+    -moz-transform:rotate(-25deg); 
+}
+#bottom .word{
+    position: absolute;
+    width: 54px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+#bottom .word p:first-child{
+    margin-bottom: 3px;
+}
+#gradientword{
+    left: 0px;
+    top: 10px;
+}
+#speedbutton{
+    background: url(../img/track.png);  
+    background-position: right top;
+    right: 30px;
+    top: 0;
+}
+#buttonright{
+    -webkit-transform:rotate(25deg);
+    -moz-transform:rotate(25deg); 
+    position: relative;
+    left: -173px;
+    top: 0px;
+}
+#speedword{
+    right: 0px;
+    top: 10px;
+}
+#bottom .bgbtn{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    cursor: pointer;
+}
+#addleft{
+    left: 167px;
+    top:0px;
+}
+#addright{
+    right: 167px;
+    top: 0px;
+}
+#decleft{
+    left: 30px;
+    top: 136px;
+}
+#decright{
+    right: 30px;
+    top:136px;
+}
+#bottom .bigButton{
+    position: absolute;
+    overflow: hidden;
+    width: 100px;
+    height: 150px;  
+}
+#bottom .bigButton p{
+    color: white;
+    margin-top: -8px;
+    text-align: center;
+}
+#rebuilt{
+    top: 60px;
+    left: 175px;
+    cursor: pointer;
+}
+#stop{
+    top: 60px;
+    right: 176px;
+    cursor: pointer;
+}
+#start{
+    width: 150px;
+    height: 190px;
+    position: absolute;
+    top: -10px;
+    left: 290px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#start p{
+    color: white;
+    margin-top: -8px;
+    text-align: center;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(../img/foot.png);
+    height: 72px;
+    overflow: hidden;
+}
+#footleft{
+    float: left;
+    margin-left: 150px;
+    height: 32px;
+    position: relative;
+    top: 50%;
+    margin-top: -16px;
+}
+
+#footleft .menu{
+    display: inline-block;
+    margin-right: 35px;
+    width: 85px;
+    cursor: pointer;
+}
+#footleft .menu:first-child{
+    width: 95px;
+}
+#footleft .menu img{
+    float: left;
+}
+
+#footleft .menu p{
+    float: right;
+    color: white;
+    font-size: 15px;
+    margin-top: 8px;
+}
+#footright{
+    float: right;
+    margin-right: 120px;
+    width: 100px;
+    color: white;
+    overflow: hidden;
+}
+#page1{
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+}
+#page2{
+    width: 48px;
+    height: 35px;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#footright .active{
+    background: url(../img/page.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+
